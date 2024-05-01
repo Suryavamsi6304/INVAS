@@ -6,6 +6,10 @@ import Fotter from "./components/Fotter";
 import Menu from "./components/Menue";
 import Contact from "./components/Contact";
 import Location from "./components/Location";
+import Login from "./Login";
+import Register from "./Register";
+import AddMenuItemForm from "./components/AddMenuItemForm";
+import { Admin } from "./components/Admin";
 
 function App() {
   return (
@@ -17,10 +21,15 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/location" element={<Location />} />
+          <Route path="/adminLogin" element={<Login />} />
+          {/* <Route path="/addfood" element={<AddMenuItemForm/>}/> */}
+          {/* <Route path="/adminLogin" element={<Admin />} /> */}
         </Routes>
         <Fotter />
       </>
     </Router>
+    // <AddMenuItemForm />
+    // <Register />
   );
 }
 

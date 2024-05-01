@@ -55,6 +55,34 @@ app.post("/registrenewuser", async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
+app.post("/loginuser", async (req, res) => {
+  try {
+    const { email, password } = req.body;
+    const userFound = await user.findOne({ email, password });
+    if (userFound) {
+      // User found, login successful
+      res.status(200).json({ message: "Login successful", user: userFound });
+    } else {
+      // User not found or invalid credentials
+      res.status(401).json({ message: "Invalid email or password" });
+    }
+  } catch (error) {
+    console.error("Error logging in:", error.message);
+    res.status(500).json({ message: "Error logging in", error: error.message });
+  }
+});
+app.get("/getcontactmessages", async (req, res) => {
+  try {
+    const messages = await ContactMessage.find({});
+    res.status(200).json(messages);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({
+      message: "Error fetching contact messages",
+      error: error.message,
+    });
+  }
+});
 
 app.post("/submitcontact", async (req, res) => {
   try {

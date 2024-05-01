@@ -1,5 +1,6 @@
 import React from "react";
 import "./Fotter.css";
+import { Link } from "react-router-dom";
 
 function Fotter() {
   return (
@@ -26,9 +27,9 @@ function Fotter() {
               <a href="#">
                 <span>CAREERS</span>
               </a>
-              <a href="">
-                <span>CONTACT</span>
-              </a>
+              <Link to="/contact">
+                <span>Contact Us</span>
+              </Link>
               <a href="">
                 <span>ABOUT</span>
               </a>

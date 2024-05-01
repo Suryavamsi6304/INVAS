@@ -2,10 +2,9 @@ import React from "react";
 import "./Impfood.css";
 import { Link } from "react-router-dom";
 
-const Impfood = ({ imageUrl }) => {
+const Impfood2 = ({ imageUrl }) => {
   return (
     <div className="impfood-container">
-      <img src={imageUrl} alt="Food" className="food-image" />
       <div className="food-description">
         <h2>Indulge in Our Chef's Special Biryani</h2>
         <p>
@@ -26,10 +25,11 @@ const Impfood = ({ imageUrl }) => {
         </p>
         <Link to="/contact">
           <button className="get-some-button">Where can I get some?</button>
-        </Link>
+        </Link>{" "}
       </div>
+      <img src={imageUrl} alt="Food" className="food-image" />
     </div>
   );
 };
 
-export default Impfood;
+export default Impfood2;

@@ -4,7 +4,7 @@ import "./Location.css"; // Import the CSS file for styling
 class Location extends React.Component {
   render() {
     return (
-      <div className="mapbox">
+      <div className="mapbox body2">
         <div className="desc">
           <div>
             <span style={{ fontSize: "2rem" }}>Downtown Delight</span> <br />

@@ -38,7 +38,7 @@
 
 .menu-section ul {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     margin: 0%;
     padding: 0%;
     width: 100%;

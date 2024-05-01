@@ -1,26 +1,26 @@
 {
   "offers": [
     {
-      "src": "https://picsum.photos/seed/img1/600/400",
+      "src": "/banner3.webp",
       "alt": "immage2"
     },
     {
-      "src": "https://picsum.photos/seed/img2/600/400",
+      "src": "/banner5.jpg",
       "alt": "immage3"  
     },
     {
-      "src": "https://picsum.photos/seed/img3/600/400",
+      "src": "/banner6.jpg",
       "alt": "immage4"
     },
     {
-      "src": "https://picsum.photos/seed/img4/600/400",
+      "src": "/banner7.jpg",
       "alt": "immage5"
     },{
-      "src": "https://picsum.photos/seed/img5/600/400",
+      "src": "/banner1.avif",
       "alt": "immage5"
     },
     {
-      "src": "https://picsum.photos/seed/img6/600/400",
+      "src": "/banner2.jpg",
       "alt": "immage6"
     }
   ]
