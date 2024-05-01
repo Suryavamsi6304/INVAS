@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 
 const items = require("./models/MenueModels");
 const user = require("./models/UserModels");
+const ContactMessage = require("./models/ContactMessage");
 const cors = require("cors");
 
 const PORT = 3000;
@@ -52,6 +53,20 @@ app.post("/registrenewuser", async (req, res) => {
   } catch (error) {
     console.log(error);
     res.status(500).json({ message: error.message });
+  }
+});
+
+app.post("/submitcontact", async (req, res) => {
+  try {
+    const message = await ContactMessage.create(req.body);
+    res
+      .status(200)
+      .json({ message: "Form submitted successfully.", data: message });
+  } catch (error) {
+    console.log(error);
+    res
+      .status(500)
+      .json({ message: "Error submitting form.", error: error.message });
   }
 });
 

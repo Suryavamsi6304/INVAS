@@ -1,5 +1,7 @@
+//contact.jsx
+
 import React from "react";
-import "./Contact.css"; // Import the CSS file for styling
+import "./Contact.css";
 
 class Contact extends React.Component {
   handleSubmit = (event) => {
