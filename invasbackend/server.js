@@ -1,14 +1,14 @@
 //server.js
 const express = require("express");
 const mongoose = require("mongoose");
-
+const dotenv = require("dotenv");
 const items = require("./models/MenueModels");
 const user = require("./models/UserModels");
 const ContactMessage = require("./models/ContactMessage");
 const cors = require("cors");
 
-const PORT = 3000;
-
+const PORT = process.env.PORT || 3000;
+dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors());
