@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-
+import "./AddMenuItemForm.css";
 const AddMenuItemForm = () => {
   const [formData, setFormData] = useState({
     foodname: "",
@@ -38,7 +38,7 @@ const AddMenuItemForm = () => {
   };
 
   return (
-    <div>
+    <div className="additem">
       <h2>Add New Menu Item</h2>
       <form onSubmit={handleSubmit}>
         <table>
@@ -52,6 +52,7 @@ const AddMenuItemForm = () => {
                   value={formData.foodname}
                   onChange={handleChange}
                   required
+                  className="additemsbox"
                 />
               </td>
             </tr>
@@ -64,6 +65,7 @@ const AddMenuItemForm = () => {
                   value={formData.foodimg}
                   onChange={handleChange}
                   required
+                  className="additemsbox"
                 />
               </td>
             </tr>
@@ -76,6 +78,7 @@ const AddMenuItemForm = () => {
                   value={formData.price}
                   onChange={handleChange}
                   required
+                  className="additemsbox"
                 />
               </td>
             </tr>
@@ -88,6 +91,7 @@ const AddMenuItemForm = () => {
                   value={formData.fooddescription}
                   onChange={handleChange}
                   required
+                  className="additemsbox"
                 />
               </td>
             </tr>
@@ -99,6 +103,7 @@ const AddMenuItemForm = () => {
                   value={formData.foodtype}
                   onChange={handleChange}
                   required
+                  className="additemsbox"
                 >
                   <option value="">Select Food Type</option>
                   <option value="breakfast">Breakfast</option>
@@ -110,7 +115,9 @@ const AddMenuItemForm = () => {
           </tbody>
         </table>
         <br />
-        <button type="submit">Add Item</button>
+        <button type="submit" className="additemsbox">
+          Add Item
+        </button>
       </form>
     </div>
   );

@@ -10,6 +10,8 @@ import Login from "./Login";
 import Register from "./Register";
 import AddMenuItemForm from "./components/AddMenuItemForm";
 import { Admin } from "./components/Admin";
+import About from "./About";
+import Gallery from "./components/Galary";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/location" element={<Location />} />
           <Route path="/adminLogin" element={<Login />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/galery" element={<Gallery />} />
           {/* <Route path="/addfood" element={<AddMenuItemForm/>}/> */}
           {/* <Route path="/adminLogin" element={<Admin />} /> */}
         </Routes>

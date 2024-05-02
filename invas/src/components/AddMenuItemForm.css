@@ -1,0 +1,33 @@
+.additem {
+    color: #ffd700;
+}
+
+.additemsbox {
+    color: black;
+    background-color: #ffd700;
+    border: 1px solid;
+    margin: 5px;
+}
+
+.adminbtns button {
+    margin: 0px 10px 0px 0px;
+    background-color: #ffd700;
+    border: 1px solid;
+    box-shadow: 5px;
+    padding: 5px;
+}
+
+.contacttext {
+    color: #ffd700;
+}
+
+.table {
+    color: #ffd700;
+
+    /* margin: 0% 5px; */
+}
+
+.table2 {
+    color: #ffd700;
+    width: 200px;
+}

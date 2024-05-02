@@ -1,5 +1,5 @@
 import React from "react";
-import "./Location.css"; // Import the CSS file for styling
+import "./Location.css";
 
 class Location extends React.Component {
   render() {
@@ -29,7 +29,7 @@ class Location extends React.Component {
           </div>
         </div>
         <div className="map">
-          <img src="/catlog1.jpeg" alt="" />
+          <img src="/resimg2.jpg" alt="" />
         </div>
       </div>
     );

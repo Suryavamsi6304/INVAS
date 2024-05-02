@@ -36,6 +36,11 @@ function Headder() {
             <span>Contact Us</span>
           </Link>
         </div>
+        <div>
+          <Link to="/galery" className="a">
+            <span>GALLERY</span>
+          </Link>
+        </div>
       </div>
     </header>
   );

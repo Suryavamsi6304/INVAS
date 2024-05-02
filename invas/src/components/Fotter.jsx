@@ -9,9 +9,9 @@ function Fotter() {
         <div className="footer">
           <div className="atr">
             <div className="icn">
-              <a href="#">
+              <a href="https://www.instagram.com/invasconventions_/" about="_">
                 <i>
-                  <img src="/" alt="" />
+                  <img src="/insta2.png" alt="insta" />
                 </i>
               </a>
               <a href="#">
@@ -21,18 +21,18 @@ function Fotter() {
               </a>
             </div>
             <div className="atr_m">
-              <a href="#">
+              {/* <a href="#">
                 <span>AWARDS</span>
               </a>
               <a href="#">
                 <span>CAREERS</span>
-              </a>
+              </a> */}
               <Link to="/contact">
                 <span>Contact Us</span>
               </Link>
-              <a href="">
+              <Link to="/about">
                 <span>ABOUT</span>
-              </a>
+              </Link>
               <a href="">
                 <span>TERMS</span>
               </a>

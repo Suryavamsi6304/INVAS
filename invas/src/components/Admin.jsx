@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AddMenuItemForm from "./AddMenuItemForm";
 import ContactMessages from "./ContactMessages";
+import "./AddMenuItemForm.css";
 
 export const Admin = () => {
   const [showAddMenuItemForm, setShowAddMenuItemForm] = useState(true);
@@ -18,8 +19,12 @@ export const Admin = () => {
 
   return (
     <>
-      <div>
-        <button onClick={handleShowAddMenuItemForm}>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="adminbtns">
+        <button onClick={handleShowAddMenuItemForm} className="">
           Show Add Menu Item Form
         </button>
         <button onClick={handleShowContactMessages}>
@@ -29,6 +34,16 @@ export const Admin = () => {
 
       {showAddMenuItemForm && <AddMenuItemForm />}
       {showContactMessages && <ContactMessages />}
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 };

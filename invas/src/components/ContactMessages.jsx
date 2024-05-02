@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "./AddMenuItemForm.css";
 
 const ContactMessages = () => {
   const [messages, setMessages] = useState([]);
@@ -21,7 +22,7 @@ const ContactMessages = () => {
   };
 
   return (
-    <div>
+    <div className="contacttext">
       <h2>Contact Messages</h2>
       <table>
         <thead>
@@ -33,10 +34,10 @@ const ContactMessages = () => {
         </thead>
         <tbody>
           {messages.map((message, index) => (
-            <tr key={index}>
-              <td>{message.name}</td>
-              <td>{message.email}</td>
-              <td>{message.message}</td>
+            <tr key={index} className="table1">
+              <td className="table2">{message.name}</td>
+              <td className="table2">{message.email}</td>
+              <td className="table2">{message.message}</td>
             </tr>
           ))}
         </tbody>
